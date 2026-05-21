@@ -76,6 +76,9 @@
 
 <p align="center">
 
+  <a href="https://codepen.io/josejorge"><img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white"/></a>
+  <a href="https://dev.to/josejorge"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/></a>
+
 <a href="https://linkedin.com/in/josejorge">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
 </a>
@@ -96,6 +99,10 @@
 <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
 </a>
 
+  <a href="https://stackoverflow.com/users/209805"><img src="https://img.shields.io/badge/StackOverflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white"/></a>
+  <a href="https://instagram.com/josejorgehz"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+  <a href="https://www.youtube.com/c/josejorge"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+
 </p>
 
 ---
@@ -104,7 +111,7 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/GoDGuilD-Gladiators%20of%20Destiny-6A0DAD?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/GoDGuilD-Gamers%20of%20Destruction-6A0DAD?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/Parlee-Tech%20Ecosystem-0A66C2?style=for-the-badge"/>
 
