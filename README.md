@@ -16,6 +16,20 @@
 
 ---
 
+<h3 align="center">🚀 Tech • Cloud • Automation • Innovation</h3>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=josejorge&label=Profile%20views&color=0e75b6&style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GoDGuilD-Gladiators%20of%20Destiny-6A0DAD?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Parlee-Tech%20Ecosystem-0A66C2?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CyperZaX-Cybersecurity-FF0033?style=for-the-badge"/>
+</p>
+
+---
+
 # ⚡ About Me
 
 ```diff
@@ -25,6 +39,13 @@
 + Ecosystem: Parlee • CyperZaX • GoDGuilD
 + Current Mission: Building scalable and secure ecosystems
 ```
+<!-- ===================== ABOUT ===================== -->
+- 🔭 Working on **Home Automation + Smart Secure Environments**
+- 🌱 Learning **Angular • React • Vue**
+- 👯 Collaborating on **RunningRiot**
+- 🤝 Exploring **Synergy Fork**
+- 💬 Ask me about **Web3 • Virtualization • Automation**
+- ⚡ Fun fact: *Clouds weigh ~1 million tons*
 
 ---
 
@@ -169,6 +190,24 @@
 
 </details>
 
+
+<details>
+<summary><b>🗄️ Databases</b></summary>
+
+<br>
+
+<p>
+
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQLServer-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>
+
+
+</p>
+
+</details>
+
 ---
 
 # 📡 Infrastructure Status
@@ -203,13 +242,9 @@
 </p>
 
 <p align="center">
-  <i>Connect your Grafana public snapshot URL here later 👀</i>
+  <i>Working on connecting my Grafana public snapshot URL here later 👀</i>
 </p>
 
-```html
-<!-- Example -->
-<img src="https://your-grafana-instance/render/d-solo/abcd1234/homelab?panelId=2&width=1000&height=500"/>
-```
 
 ---
 
@@ -217,11 +252,9 @@
 
 <p align="center">
 
-<img src="https://spotify-github-profile.vercel.app/api/view?uid=31xxxxxxxxxxxxxxxxxxxx&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"/>
+<img src="https://spotify-github-profile.vercel.app/api/view?uid=josejorgehz&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"/>
 
 </p>
-
-> Replace the Spotify UID above with your own.
 
 ---
 
@@ -277,6 +310,39 @@
 
 ---
 
+<!-- ===================== STATS ===================== -->
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+### 🔥 Streak Stats
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=josejorge&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+### 📈 Activity Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=josejorge&theme=tokyo-night&hide_border=true"/>
+</p>
+
+---
+
+<!-- ===================== TROPHIES ===================== -->
+### 🏆 Achievements
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
+</p>
+
+
+---
+
 # ⚡ Final Transmission
 
 <p align="center">
@@ -288,4 +354,11 @@
 + PARLEE ECOSYSTEM: EXPANDING
 ```
 
+</p>
+
+---
+
+<!-- ===================== FOOTER ===================== -->
+<p align="center">
+  ⚡ Built with passion, automation, and a bit of chaos ⚡
 </p>
