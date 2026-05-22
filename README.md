@@ -218,7 +218,9 @@
 
 ---
 
+<p align="center">
 ![Top Languages](./assets/top-langs.svg)
+</p>
 
 ---
 
