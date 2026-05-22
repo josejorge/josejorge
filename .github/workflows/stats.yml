@@ -10,6 +10,6 @@
     # Output path for SVG file (relative path; include filename with .svg).
     path: # optional, default is 
     # GitHub token (PAT or GITHUB_TOKEN).
-    token: ${{ secrets.GITHUB_TOKEN }}
+    token: ${{ secrets.JOSEJORGE_TOKEN }}
     # Version of @stats-organization/github-readme-stats-core to use internally.
     core_version: # optional, default is v2
