@@ -22,7 +22,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2.0.0
         with:
           card: top-langs
-          options: username=josejorge&layout=compact&langs_count=6
+          options: username=josejorge&layout=compact&langs_count=8
           path: assets/top-langs.svg
           token: ${{ secrets.JOSEJORGE_TOKEN }}
 
