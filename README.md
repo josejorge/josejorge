@@ -218,7 +218,7 @@
 
 ---
 
-![Top Languages](./profile/top-langs.svg)
+![Top Languages](./assets/top-langs.svg)
 
 ---
 
