@@ -74,6 +74,7 @@
 
 # 🌐 Connect With Me
 
+<center>
 <p align="center">
 
   <a href="https://codepen.io/josejorge"><img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white"/></a>
@@ -104,7 +105,7 @@
   <a href="https://www.youtube.com/c/josejorge"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
 
 </p>
-
+</center>
 ---
 
 # 🎮 Ecosystem
