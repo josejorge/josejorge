@@ -219,7 +219,7 @@
 ---
 
 <p align="center">
-![Top Languages](./assets/top-langs.svg)
+<img src="./assets/top-langs.svg" />
 </p>
 
 ---
