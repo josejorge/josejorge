@@ -147,8 +147,6 @@
 
 </details>
 
-![Top Languages](./profile/top-langs.svg)
-
 <details>
 <summary><b>🌐 Frontend</b></summary>
 
@@ -217,6 +215,10 @@
 </p>
 
 </details>
+
+---
+
+![Top Languages](./profile/top-langs.svg)
 
 ---
 
