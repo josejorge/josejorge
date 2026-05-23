@@ -23,9 +23,15 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GoDGuilD-Gladiators%20of%20Destiny-6A0DAD?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/GoDGuilD-Gamers%20of%20Destruction-6A0DAD?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Parlee-Tech%20Ecosystem-0A66C2?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/CyperZaX-Cybersecurity-FF0033?style=for-the-badge"/>
+</p>
+
+---
+
+<p align="center">
+<img src="./assets/top-langs.svg" />
 </p>
 
 ---
@@ -215,12 +221,6 @@
 </p>
 
 </details>
-
----
-
-<p align="center">
-<img src="./assets/top-langs.svg" />
-</p>
 
 ---
 
