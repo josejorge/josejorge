@@ -272,11 +272,7 @@
 
 # 🎵 Now Playing
 
-<p align="center">
-
-<img src="https://spotify-github-profile.vercel.app/api/view?uid=josejorgehz&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"/>
-
-</p>
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=josejorgehz&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile)
 
 ---
 
@@ -287,16 +283,6 @@
 - ⚡ Auto-updating articles from blog.kythex.com
 - 🧠 Automation + Homelab content
 <!-- BLOG-POST-LIST:END -->
-
----
-
-# 🏆 Achievements
-
-<p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=6"/>
-
-</p>
 
 ---
 
