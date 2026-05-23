@@ -226,9 +226,7 @@
 
 # 🧠 Development Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,cs,cpp,bash,php,kotlin,react,vue,angular,docker,kubernetes,aws,azure,gcp,linux,mysql,postgresql,firebase,grafana,tensorflow,unity,unreal" />
-</p>
+<p align="center"><img src="https://skillicons.dev/icons?i=python,typescript,javascript,cs,cpp,bash,php,kotlin,react,vue,angular,docker,kubernetes,aws,azure,gcp,linux,mysql,postgresql,firebase,grafana,tensorflow,unity,unreal" /></p>
 
 ---
 
@@ -272,9 +270,7 @@
 
 # 🎵 Now Playing
 
-<p align="center">
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=josejorgehz&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile)
-</p>
 
 ---
 
