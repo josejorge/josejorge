@@ -291,7 +291,7 @@
 [![Grafana Dashboard](./assets/dashboard.png)](https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d)
 
 <p align="center">
-  <i>Working on connecting my Grafana public snapshot URL here later 👀</i>
+  <i>This Grafana public snapshot updates every six hours 👀</i>
 </p>
 
 
