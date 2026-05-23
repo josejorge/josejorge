@@ -24,21 +24,17 @@ const fs = require('fs');
     console.log(dashboardUrl);
 
     await page.goto(dashboardUrl, {
-      waitUntil: 'networkidle',
+      waitUntil: 'domcontentloaded',
       timeout: 120000
     });
 
-    console.log('Dashboard loaded.');
+    console.log('Dashboard page opened.');
 
-    // Wait until Grafana charts/panels render
-    console.log('Waiting for Grafana panels to render...');
+    // IMPORTANT:
+    // Give Grafana enough time to fully render panels.
+    console.log('Waiting for panels to load...');
 
-    await page.waitForSelector('canvas', {
-      timeout: 120000
-    });
-
-    // Extra buffer time to allow ALL panels to finish rendering
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(30000);
 
     const outputPath = path.join(
       __dirname,
@@ -50,11 +46,11 @@ const fs = require('fs');
     await page.screenshot({
       path: outputPath,
 
-      // Better for Grafana dashboards
+      // safer for Grafana dashboards
       fullPage: false
     });
 
-    console.log('Screenshot saved successfully!');
+    console.log('Screenshot saved!');
     console.log('Output:', outputPath);
 
     console.log(
