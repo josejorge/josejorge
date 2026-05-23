@@ -224,6 +224,14 @@
 
 ---
 
+# 🧠 Development Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,cs,cpp,bash,php,kotlin,react,vue,angular,docker,kubernetes,aws,azure,gcp,linux,mysql,postgresql,firebase,grafana,tensorflow,unity,unreal" />
+</p>
+
+---
+
 # 📡 Infrastructure Status
 
 ```yaml
