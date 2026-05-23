@@ -112,6 +112,17 @@
 
 </p>
 </center>
+
+---
+
+# 🎮 Discord Status
+
+<p align="center">
+  <a href="https://discord.com/users/221872218563543040">
+    <img src="https://lanyard.cnrad.dev/api/221872218563543040?theme=dark&bg=0d1117&animated=true&hideDiscrim=true&borderRadius=30px"/>
+  </a>
+</p>
+
 ---
 
 # 🎮 Ecosystem
