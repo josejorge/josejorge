@@ -1,34 +1,74 @@
 const { chromium } = require('playwright');
 const path = require('path');
+const fs = require('fs');
 
 (async () => {
-  const browser = await chromium.launch({
-    headless: true
-  });
+  try {
+    console.log('Launching browser...');
 
-  const page = await browser.newPage({
-    viewport: {
-      width: 1600,
-      height: 900
-    }
-  });
+    const browser = await chromium.launch({
+      headless: true
+    });
 
-  // YOUR PUBLIC DASHBOARD URL
-  await page.goto(
-    'https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d',
-    {
+    const page = await browser.newPage({
+      viewport: {
+        width: 1600,
+        height: 900
+      }
+    });
+
+    const dashboardUrl =
+      'https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d';
+
+    console.log('Opening dashboard...');
+    console.log(dashboardUrl);
+
+    await page.goto(dashboardUrl, {
       waitUntil: 'networkidle',
       timeout: 120000
-    }
-  );
+    });
 
-  // Wait a bit for panels to fully render
-  await page.waitForTimeout(10000);
+    console.log('Dashboard loaded.');
 
-  await page.screenshot({
-    path: path.join(__dirname, '../assets/dashboard.png'),
-    fullPage: true
-  });
+    // Wait until Grafana charts/panels render
+    console.log('Waiting for Grafana panels to render...');
 
-  await browser.close();
+    await page.waitForSelector('canvas', {
+      timeout: 120000
+    });
+
+    // Extra buffer time to allow ALL panels to finish rendering
+    await page.waitForTimeout(10000);
+
+    const outputPath = path.join(
+      __dirname,
+      '../assets/dashboard.png'
+    );
+
+    console.log('Taking screenshot...');
+
+    await page.screenshot({
+      path: outputPath,
+
+      // Better for Grafana dashboards
+      fullPage: false
+    });
+
+    console.log('Screenshot saved successfully!');
+    console.log('Output:', outputPath);
+
+    console.log(
+      'File exists:',
+      fs.existsSync(outputPath)
+    );
+
+    await browser.close();
+
+    console.log('Done!');
+  } catch (error) {
+    console.error('Capture failed!');
+    console.error(error);
+
+    process.exit(1);
+  }
 })();
