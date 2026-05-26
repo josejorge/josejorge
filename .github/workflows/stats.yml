@@ -35,4 +35,6 @@ jobs:
 
           git commit -m "Update GitHub stats" || echo "No changes to commit"
 
+          git pull --rebase origin main
+          
           git push
