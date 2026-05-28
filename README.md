@@ -376,8 +376,7 @@
 <!-- ===================== TROPHIES ===================== -->
 ### 🏆 Achievements
 <p align="center">
-  <img src="trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/><br>
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+  <img src="https://trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
 </p>
 
 ---
