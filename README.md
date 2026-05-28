@@ -31,7 +31,7 @@
 ---
 
 <p align="center">
-<img src="./assets/top-langs.svg" />
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 </p>
 
 ---
@@ -349,8 +349,7 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" /><br>
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+  <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
