@@ -348,9 +348,9 @@
 <!-- ===================== STATS ===================== -->
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats-jose-jorge-s-projects.vercel.app/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img src="https://github-readme-stats-jose-jorge-s-projects.vercel.app/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true" />
+<p align="center">https://stats.josejorge.com/api?show_icons=true&theme=tokyonight&username=josejorge&hide_border=true
+  <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
