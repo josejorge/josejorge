@@ -350,7 +350,7 @@
 
 <p align="center">
   <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" /><br>
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 </p>
 
 ---
@@ -372,9 +372,8 @@
 <!-- ===================== TROPHIES ===================== -->
 ### 🏆 Achievements
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
+  <img src="trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
 </p>
-
 
 ---
 
