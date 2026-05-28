@@ -299,7 +299,12 @@
 
 # 🎵 Now Playing
 
+<p align="center">
+
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=josejorgehz&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile)
+
+</p>
+
 
 ---
 
@@ -371,7 +376,8 @@
 <!-- ===================== TROPHIES ===================== -->
 ### 🏆 Achievements
 <p align="center">
-  <img src="trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
+  <img src="trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/><br>
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 </p>
 
 ---
