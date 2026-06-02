@@ -30,12 +30,6 @@
 
 ---
 
-<p align="center">
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12" />
-</p>
-
----
-
 # ⚡ About Me
 
 ```diff
@@ -52,6 +46,12 @@
 - 🤝 Exploring **Synergy Fork**
 - 💬 Ask me about **Web3 • Virtualization • Automation**
 - ⚡ Fun fact: *Clouds weigh ~1 million tons*
+
+---
+
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
 
 ---
 
@@ -392,6 +392,12 @@
 + PARLEE ECOSYSTEM: EXPANDING
 ```
 
+</p>
+
+---
+
+<p align="center">
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12" />
 </p>
 
 ---
