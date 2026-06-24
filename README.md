@@ -313,10 +313,11 @@
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- 🚀 Coming soon...
-- ⚡ Auto-updating articles from blog.kythex.com
-- 🧠 Automation + Homelab content
-<!-- BLOG-POST-LIST:END -->
+- 📰 [Diablo Lore Explained: From the Eternal Conflict to Diablo IV’s Age of Hatred](https://blog.kythex.com/diablo-lore-explained-from-the-eternal-conflict-to-diablo-ivs-age-of-hatred/)
+- 📰 [Game UI/UX Design: The Interface That Disappears](https://blog.kythex.com/game-ui-ux-design-the-interface-that-disappears/)
+- 📰 [Tears of the Kingdom and the Art of Emergent Game Design](https://blog.kythex.com/tears-of-the-kingdom-and-the-art-of-emergent-game-design/)
+- 📰 [Procedural Storytelling: When Systems Write Better Stories Than Authors](https://blog.kythex.com/procedural-storytelling-when-systems-write-better-stories-than-authors/)
+- 📰 [From Pixels to Ray Tracing: The Beautiful History of Video Game Graphics](https://blog.kythex.com/from-pixels-to-ray-tracing-the-beautiful-history-of-video-game-graphics/)<!-- BLOG-POST-LIST:END -->
 
 ---
 
