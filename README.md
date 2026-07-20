@@ -313,11 +313,11 @@
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- 📰 [Halo: Combat Evolved and the Level Design Nobody Has Matched Since](https://blog.kythex.com/halo-combat-evolved-and-the-level-design-nobody-has-matched-since/)
 - 📰 [Titanfall 2: Why Nobody Played the Best Campaign in Shooters](https://blog.kythex.com/titanfall-2-why-nobody-played-the-best-campaign-in-shooters/)
 - 📰 [The GameCube at 25: When Nintendo Got Weird and It Worked](https://blog.kythex.com/the-gamecube-at-25-when-nintendo-got-weird-and-it-worked/)
 - 📰 [Diablo Lore Explained: From the Eternal Conflict to Diablo IV’s Age of Hatred](https://blog.kythex.com/diablo-lore-explained-from-the-eternal-conflict-to-diablo-ivs-age-of-hatred/)
-- 📰 [Game UI/UX Design: The Interface That Disappears](https://blog.kythex.com/game-ui-ux-design-the-interface-that-disappears/)
-- 📰 [Tears of the Kingdom and the Art of Emergent Game Design](https://blog.kythex.com/tears-of-the-kingdom-and-the-art-of-emergent-game-design/)<!-- BLOG-POST-LIST:END -->
+- 📰 [Game UI/UX Design: The Interface That Disappears](https://blog.kythex.com/game-ui-ux-design-the-interface-that-disappears/)<!-- BLOG-POST-LIST:END -->
 
 ---
 
