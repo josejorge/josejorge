@@ -1,3 +1,13 @@
+<!--
+File: README.md
+Description: GitHub profile README for josejorge — reordered so professional/DevOps proof sits above the KytheX/gaming persona content; see git history for the prior order.
+Author: Jose-Jorge HERNANDEZ
+Company: N/A
+Date: 2026-06-19
+Last edit date: 2026-07-27
+Version: 1.1
+-->
+
 <!-- ===================================================== -->
 <!--                ⚡ KYTHEX / JOE PROFILE ⚡              -->
 <!-- ===================================================== -->
@@ -35,11 +45,13 @@
 ```diff
 + Name: Joe / KytheX
 + Role: Senior Operations Manager | Tech Architect
++ Day job: Senior Manager, IT Ops & DevOps @ Thales Group (Defense & Digital Security)
 + Focus: Cloud • Automation • Cybersecurity • GameDev
-+ Ecosystem: Parlee • CyperZaX • GoDGuilD
++ Ecosystem: Parlee • CyperZaX (personal security/home-lab project) • GoDGuilD
 + Current Mission: Building scalable and secure ecosystems
 ```
 <!-- ===================== ABOUT ===================== -->
+- 🔒 Professional confidentiality practice comes from Thales' defense-sector standards — CyperZaX below is a personal home-lab/security project, not a professional credential.
 - 🔭 Working on **Home Automation + Smart Secure Environments**
 - 🌱 Learning **Angular • React • Vue**
 - 👯 Collaborating on **RunningRiot**
@@ -53,105 +65,6 @@
 <picture>
   <img src="/github-metrics.svg" alt="Metrics">
 </picture>
-</p>
-
----
-
-# 🧠 Current Focus
-
-```yaml
-🚀 Working On:
-  - Smart Home Automation
-  - Cloud-native Infrastructure
-  - Game Development Projects
-  - AI-enhanced Workflows
-
-📚 Currently Learning:
-  - Angular
-  - React
-  - Vue
-  - Advanced Kubernetes
-
-🎮 Side Quest:
-  - RunningRiot
-  - VoidInvaders
-  - GoDStudioS
-```
-
----
-
-# 🌐 Connect With Me
-
-<p align="center">
-
-<a href="https://codepen.io/josejorge">
-<img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white"/>
-</a>
-
-<a href="https://dev.to/josejorge">
-<img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/>
-</a>
-
-<a href="https://linkedin.com/in/josejorge">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
-</a>
-
-<a href="https://twitter.com/josejorge">
-<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter"/>
-</a>
-
-<a href="https://github.com/josejorge">
-<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github"/>
-</a>
-
-<a href="https://blog.kythex.com">
-<img src="https://img.shields.io/badge/Blog-KytheX-6A0DAD?style=for-the-badge&logo=ghost"/>
-</a>
-
-<a href="mailto:me@josejorge.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
-</a>
-
-<a href="https://stackoverflow.com/users/209805">
-<img src="https://img.shields.io/badge/StackOverflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white"/>
-</a>
-
-<a href="https://instagram.com/josejorgehz">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
-
-<a href="https://www.youtube.com/c/josejorge">
-<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
-</a>
-
-</p>
-
----
-
-# 🎮 Discord Status
-
-<p align="center">
-  <a href="https://discord.com/users/221872218563543040">
-    <img src="https://lanyard.cnrad.dev/api/221872218563543040?theme=dark&bg=0d1117&animated=true&hideDiscrim=true&borderRadius=30px"/>
-  </a>
-</p>
-
----
-
-# 🎮 Ecosystem
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/GoDGuilD-Gamers%20of%20Destruction-6A0DAD?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Parlee-Tech%20Ecosystem-0A66C2?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/CyperZaX-Cybersecurity-FF0033?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/GoDStudioS-Game%20Development-9146FF?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/GoDServerS-Gaming%20Infrastructure-00C853?style=for-the-badge"/>
-
 </p>
 
 ---
@@ -297,6 +210,139 @@
   <i>This Grafana public snapshot gets automatically updated every six hours 👀</i>
 </p>
 
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+### 🔥 Streak Stats
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=josejorge&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+### 📈 Activity Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=josejorge&theme=tokyo-night&hide_border=true"/>
+</p>
+
+---
+
+### 🏆 Achievements
+<p align="center">
+  <img src="https://trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12" />
+</p>
+
+---
+
+# 🧠 Current Focus
+
+```yaml
+🚀 Working On:
+  - Smart Home Automation
+  - Cloud-native Infrastructure
+  - Game Development Projects
+  - AI-enhanced Workflows
+
+📚 Currently Learning:
+  - Angular
+  - React
+  - Vue
+  - Advanced Kubernetes
+
+🎮 Side Quest:
+  - RunningRiot
+  - VoidInvaders
+  - GoDStudioS
+```
+
+---
+
+# 🌐 Connect With Me
+
+<p align="center">
+
+<a href="https://codepen.io/josejorge">
+<img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white"/>
+</a>
+
+<a href="https://dev.to/josejorge">
+<img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/>
+</a>
+
+<a href="https://linkedin.com/in/josejorge">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="https://twitter.com/josejorge">
+<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter"/>
+</a>
+
+<a href="https://github.com/josejorge">
+<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://blog.kythex.com">
+<img src="https://img.shields.io/badge/Blog-KytheX-6A0DAD?style=for-the-badge&logo=ghost"/>
+</a>
+
+<a href="mailto:me@josejorge.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
+</a>
+
+<a href="https://stackoverflow.com/users/209805">
+<img src="https://img.shields.io/badge/StackOverflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white"/>
+</a>
+
+<a href="https://instagram.com/josejorgehz">
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+<a href="https://www.youtube.com/c/josejorge">
+<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+# 🎮 Discord Status
+
+<p align="center">
+  <a href="https://discord.com/users/221872218563543040">
+    <img src="https://lanyard.cnrad.dev/api/221872218563543040?theme=dark&bg=0d1117&animated=true&hideDiscrim=true&borderRadius=30px"/>
+  </a>
+</p>
+
+---
+
+# 🎮 Ecosystem
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/GoDGuilD-Gamers%20of%20Destruction-6A0DAD?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Parlee-Tech%20Ecosystem-0A66C2?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/CyperZaX-Cybersecurity-FF0033?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/GoDStudioS-Game%20Development-9146FF?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/GoDServerS-Gaming%20Infrastructure-00C853?style=for-the-badge"/>
+
+</p>
 
 ---
 
@@ -353,37 +399,6 @@
 
 ---
 
-<!-- ===================== STATS ===================== -->
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://stats.josejorge.com/api?username=josejorge&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-### 🔥 Streak Stats
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=josejorge&theme=tokyonight&hide_border=true"/>
-</p>
-
----
-
-### 📈 Activity Graph
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=josejorge&theme=tokyo-night&hide_border=true"/>
-</p>
-
----
-
-<!-- ===================== TROPHIES ===================== -->
-### 🏆 Achievements
-<p align="center">
-  <img src="https://trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
-</p>
-
----
-
 # ⚡ Final Transmission
 
 <p align="center">
@@ -395,12 +410,6 @@
 + PARLEE ECOSYSTEM: EXPANDING
 ```
 
-</p>
-
----
-
-<p align="center">
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12" />
 </p>
 
 ---
