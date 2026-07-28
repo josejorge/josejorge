@@ -5,7 +5,7 @@ Author: Jose-Jorge HERNANDEZ
 Company: N/A
 Date: 2026-06-19
 Last edit date: 2026-07-27
-Version: 1.1
+Version: 1.2
 -->
 
 <!-- ===================================================== -->
@@ -298,7 +298,7 @@ Version: 1.1
 <img src="https://img.shields.io/badge/Blog-KytheX-6A0DAD?style=for-the-badge&logo=ghost"/>
 </a>
 
-<a href="mailto:me@josejorge.com">
+<a href="mailto:hello@josejorge.com">
 <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
 </a>
 
