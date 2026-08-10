@@ -2,7 +2,7 @@
 File: README.md
 Description: GitHub profile README for josejorge — reordered so professional/DevOps proof sits above the KytheX/gaming persona content; see git history for the prior order.
 Author: Jose-Jorge HERNANDEZ
-Company: N/A
+Company: Parlee Conseiller
 Date: 2026-06-19
 Last edit date: 2026-07-27
 Version: 1.2
