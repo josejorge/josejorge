@@ -7,7 +7,7 @@
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
 // Last edit date: 2026-09-11
-// Version: 1.0.0
+// Version: 1.1.0
 
 const fs = require("fs");
 const path = require("path");
@@ -44,12 +44,25 @@ function extractTag(itemXml, tag) {
   return decodeEntities(cdata ? cdata[1] : raw).trim();
 }
 
+// Navigates to the feed URL and returns the raw response body of that
+// navigation (not a secondary fetch()), retrying once after a pause.
+// Reading straight off the navigation response avoids a pitfall of the
+// in-page fetch() approach: Cloudflare's challenge page can reload itself
+// once its JS proof-of-work finishes, and if that reload lands mid-fetch()
+// the browser tears down the page's execution context, so any in-flight
+// fetch() dies with "Failed to fetch" — a real navigation isn't subject to
+// that race, since the response we read back IS the (possibly reloaded) page.
+async function gotoAndRead(page, url) {
+  const response = await page.goto(url, { waitUntil: "load", timeout: 45000 });
+  return response.text();
+}
+
 async function fetchFeedXml() {
   // A real browser is required here, not a plain HTTP client: Cloudflare's
   // Bot Fight Mode issues a silent JS "managed challenge" to non-browser
   // clients from datacenter ASNs — exactly what blocked GitHub Actions'
   // hosted runners. Playwright's Chromium executes that challenge like any
-  // normal visitor, so the follow-up in-page fetch() succeeds.
+  // normal visitor.
   const browser = await chromium.launch();
   try {
     const context = await browser.newContext({
@@ -58,22 +71,15 @@ async function fetchFeedXml() {
     });
     const page = await context.newPage();
 
-    // Load the blog's home page first so any Cloudflare challenge is solved
-    // and a cf_clearance cookie is set before touching the feed itself.
-    await page.goto("https://blog.kythex.com/", {
-      waitUntil: "networkidle",
-      timeout: 45000,
-    });
-    await page.waitForTimeout(3000);
+    let xml = await gotoAndRead(page, FEED_URL);
 
-    // Fetch the feed from inside the page context so it reuses the same
-    // cookies/TLS session that just passed the challenge.
-    const xml = await page.evaluate(async (url) => {
-      const res = await fetch(url, {
-        headers: { Accept: "application/rss+xml" },
-      });
-      return res.text();
-    }, FEED_URL);
+    // First response may be Cloudflare's challenge page instead of the feed
+    // (the challenge solves itself client-side after a few seconds). Give it
+    // time, then request the feed again with the now-cleared session.
+    if (!xml.includes("<item")) {
+      await page.waitForTimeout(8000);
+      xml = await gotoAndRead(page, FEED_URL);
+    }
 
     if (!xml.includes("<item")) {
       throw new Error(
