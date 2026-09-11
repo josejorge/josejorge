@@ -1,3 +1,16 @@
+# File: blog-posts.yml
+# Description: Weekly workflow that refreshes the "Latest Blog Posts" section
+#   of README.md from the KytheX blog RSS feed. Fetches the feed through a
+#   real headless browser (see scripts/update-blog-readme.js) because
+#   Cloudflare's Bot Fight Mode on blog.kythex.com issues a silent JS
+#   challenge to plain HTTP clients (including GitHub-hosted runners), which
+#   a real browser resolves automatically.
+# Author: Jose-Jorge HERNANDEZ
+# Company: Parlee Conseiller, Inc.
+# Date: 2026-09-11
+# Last edit date: 2026-09-11
+# Version: 1.0.0
+
 name: Update Blog Posts
 
 permissions:
@@ -5,7 +18,9 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    # Weekly, Wednesday 12:00 UTC (~06:00 CST Mexico City) — posts are
+    # published Mon/Tue, so this picks them up a day or two later.
+    - cron: "0 12 * * 3"
 
   workflow_dispatch:
 
@@ -20,8 +35,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - uses: actions/setup-node@v4
         with:
-          feed_list: "https://blog.kythex.com/feed"
-          max_post_count: 5
-          template: "$newline- 📰 [$title]($url)"
+          node-version: "20"
+
+      - name: Install Playwright
+        run: |
+          npm install playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+      - name: Fetch feed and update README
+        run: node scripts/update-blog-readme.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "blog-post-bot"
+          git config user.email "blog-post-bot@example.com"
+          git add README.md
+          git diff --staged --quiet || (git commit -m "Updated with the latest blog posts" && git push)
