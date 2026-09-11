@@ -359,11 +359,11 @@ Version: 1.2
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- 📰 [Halo: Combat Evolved and the Level Design Nobody Has Matched Since](https://blog.kythex.com/halo-combat-evolved-and-the-level-design-nobody-has-matched-since/)
-- 📰 [Titanfall 2: Why Nobody Played the Best Campaign in Shooters](https://blog.kythex.com/titanfall-2-why-nobody-played-the-best-campaign-in-shooters/)
-- 📰 [The GameCube at 25: When Nintendo Got Weird and It Worked](https://blog.kythex.com/the-gamecube-at-25-when-nintendo-got-weird-and-it-worked/)
-- 📰 [Diablo Lore Explained: From the Eternal Conflict to Diablo IV’s Age of Hatred](https://blog.kythex.com/diablo-lore-explained-from-the-eternal-conflict-to-diablo-ivs-age-of-hatred/)
-- 📰 [Game UI/UX Design: The Interface That Disappears](https://blog.kythex.com/game-ui-ux-design-the-interface-that-disappears/)<!-- BLOG-POST-LIST:END -->
+- 📰 [The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past](https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/)
+- 📰 [Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem](https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/)
+- 📰 [Hades and the Roguelike That Made Dying Feel Like Progress](https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/)
+- 📰 [Metroid at 40: Why Getting Lost Was the Whole Point](https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/)
+- 📰 [Elden Ring on Switch 2: Portable Was the Right Call](https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/)<!-- BLOG-POST-LIST:END -->
 
 ---
 
