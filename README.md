@@ -1,15 +1,19 @@
 <!--
 File: README.md
 Description: GitHub profile README for josejorge. Featured Work section added
-  above the metrics dashboard for recruiter visibility; Activity Graph now
-  reads a locally-cached SVG (the old live vercel.app embed was permanently
-  discontinued); Latest Blog Posts now merges 3 blogs into a per-blog table.
-  See git history for the prior order/content.
+  above the metrics dashboard for recruiter visibility (now 4 real projects:
+  BookNow, Browser Picker Pro, the Tabularis Cloudflare D1 plugin, and an
+  anonymized payroll/notification case study); Activity Graph now reads a
+  locally-cached SVG (the old live vercel.app embed was permanently
+  discontinued); Latest Blog Posts merges 3 blogs into a per-blog table; every
+  <table> in the file carries align="center" so the table box itself is
+  centered on the page, not just its inner text. See git history for the
+  prior order/content.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
 Last edit date: 2026-09-14
-Version: 2.0.0
+Version: 2.1.0
 -->
 
 <!-- ===================================================== -->
@@ -67,7 +71,7 @@ Version: 2.0.0
 
 # 🛠️ Featured Work
 
-<table>
+<table align="center">
 <tr>
 <td width="50%" valign="top">
 
@@ -78,6 +82,30 @@ Production booking system live on **Cloudflare Pages + Functions**. Real-time Go
 **Stack:** Cloudflare Pages/Functions · Google Calendar API · Turnstile · Vanilla JS
 
 🔗 [github.com/josejorge/calendar-appointments](https://github.com/josejorge/calendar-appointments)
+
+</td>
+<td width="50%" valign="top">
+
+### 🖱️ Browser Picker Pro
+
+A Windows app that intercepts link clicks and lets you route them to the right browser — smart rules engine (domain/wildcard/regex), multi-profile support (Chrome/Firefox/Edge), VirusTotal + Google Safe Browsing checks, and a glassmorphism UI with 3D card-hover animations. Registers as the default HTTP/HTTPS handler without requiring admin rights.
+
+**Stack:** C# · .NET · WinUI · VirusTotal / Safe Browsing APIs
+
+🔗 [github.com/ParleeConseiller/browser-picker-pro](https://github.com/ParleeConseiller/browser-picker-pro)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔌 Cloudflare D1 Plugin for Tabularis
+
+A Rust plugin for the open-source Tabularis database client, adding full Cloudflare D1 support: browse databases/tables/indexes/foreign keys, run paginated SQL, full DDL (create/alter/drop tables, indexes, views), and ER-diagram generation — all talking to Cloudflare's D1 REST API through Tabularis' own plugin architecture.
+
+**Stack:** Rust · Cloudflare D1 REST API · Plugin architecture
+
+🔗 [github.com/josejorge/tabularis_cloudflare_d1_plugin](https://github.com/josejorge/tabularis_cloudflare_d1_plugin)
 
 </td>
 <td width="50%" valign="top">
@@ -397,26 +425,28 @@ Designed and shipped a production payroll and in-app notification system for a h
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-| KytheX | The Alz Diary | Tierra de Oz |
-| --- | --- | --- |
-| [The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past](https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/) | [Incontinence: Protecting Her Dignity Without Losing My Own](https://thealzdiary.com/2026/09/07/incontinence-protecting-her-dignity-without-losing-my-own/) | [Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé](https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/) |
-| [Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem](https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/) | [The Face I Didn’t Recognize Was Mine](https://thealzdiary.com/2026/08/31/the-face-i-didnt-recognize-was-mine/) | [Campeche — Playas, Pirámides y el Pan de Cazón](https://tierradeoz.com/campeche-playas-piramides-pan-de-cazon/) |
-| [Hades and the Roguelike That Made Dying Feel Like Progress](https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/) | [The Question She Asks Every Ten Minutes](https://thealzdiary.com/2026/08/24/the-question-she-asks-every-ten-minutes/) | [Marsella y Aix-en-Provence — El Sur de Francia a Nuestro Estilo](https://tierradeoz.com/marsella-aix-en-provence-sur-francia/) |
-| [Metroid at 40: Why Getting Lost Was the Whole Point](https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/) | [What I Would Say to the Disease, If It Could Hear Me](https://thealzdiary.com/2026/08/17/what-i-would-say-to-the-disease-if-it-could-hear-me/) | [Acapulco con Bebé — Nuestro Primer Viaje como Familia de Tres](https://tierradeoz.com/acapulco-primer-viaje-familia-bebe-cachito/) |
-| [Elden Ring on Switch 2: Portable Was the Right Call](https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/) | [What Her Hands Still Know: A Caregiver’s Poem](https://thealzdiary.com/2026/08/10/what-her-hands-still-know-a-caregivers-poem/) | [Praga — La Ciudad de los Cien Chapiteles y el Pato más Rico de Europa](https://tierradeoz.com/praga-republica-checa-ciudad-cien-chapiteles/) |
+<table align="center">
+<tr><th>KytheX</th><th>The Alz Diary</th><th>Tierra de Oz</th></tr>
+<tr><td><a href="https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/">The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past</a></td><td><a href="https://thealzdiary.com/2026/09/07/incontinence-protecting-her-dignity-without-losing-my-own/">Incontinence: Protecting Her Dignity Without Losing My Own</a></td><td><a href="https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/">Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé</a></td></tr>
+<tr><td><a href="https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/">Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem</a></td><td><a href="https://thealzdiary.com/2026/08/31/the-face-i-didnt-recognize-was-mine/">The Face I Didn’t Recognize Was Mine</a></td><td><a href="https://tierradeoz.com/campeche-playas-piramides-pan-de-cazon/">Campeche — Playas, Pirámides y el Pan de Cazón</a></td></tr>
+<tr><td><a href="https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/">Hades and the Roguelike That Made Dying Feel Like Progress</a></td><td><a href="https://thealzdiary.com/2026/08/24/the-question-she-asks-every-ten-minutes/">The Question She Asks Every Ten Minutes</a></td><td><a href="https://tierradeoz.com/marsella-aix-en-provence-sur-francia/">Marsella y Aix-en-Provence — El Sur de Francia a Nuestro Estilo</a></td></tr>
+<tr><td><a href="https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/">Metroid at 40: Why Getting Lost Was the Whole Point</a></td><td><a href="https://thealzdiary.com/2026/08/17/what-i-would-say-to-the-disease-if-it-could-hear-me/">What I Would Say to the Disease, If It Could Hear Me</a></td><td><a href="https://tierradeoz.com/acapulco-primer-viaje-familia-bebe-cachito/">Acapulco con Bebé — Nuestro Primer Viaje como Familia de Tres</a></td></tr>
+<tr><td><a href="https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/">Elden Ring on Switch 2: Portable Was the Right Call</a></td><td><a href="https://thealzdiary.com/2026/08/10/what-her-hands-still-know-a-caregivers-poem/">What Her Hands Still Know: A Caregiver’s Poem</a></td><td><a href="https://tierradeoz.com/praga-republica-checa-ciudad-cien-chapiteles/">Praga — La Ciudad de los Cien Chapiteles y el Pato más Rico de Europa</a></td></tr>
+</table>
 <!-- BLOG-POST-LIST:END -->
 
 ---
 
 # 🎮 Current Projects
 
-| Project | Description |
-|---|---|
-| 🎮 RunningRiot | Endless runner chaos |
-| 👾 VoidInvaders | Space Invaders-inspired arcade |
-| 🛡️ CyperZaX | Security ecosystem |
-| ☁️ GoDServerS | Gaming infrastructure |
-| 🧠 Parlee | Cloud + automation ecosystem |
+<table align="center">
+<tr><th>Project</th><th>Description</th></tr>
+<tr><td>🎮 RunningRiot</td><td>Endless runner chaos</td></tr>
+<tr><td>👾 VoidInvaders</td><td>Space Invaders-inspired arcade</td></tr>
+<tr><td>🛡️ CyperZaX</td><td>Security ecosystem</td></tr>
+<tr><td>☁️ GoDServerS</td><td>Gaming infrastructure</td></tr>
+<tr><td>🧠 Parlee</td><td>Cloud + automation ecosystem</td></tr>
+</table>
 
 ---
 
