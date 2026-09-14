@@ -1,19 +1,20 @@
 <!--
 File: README.md
-Description: GitHub profile README for josejorge. Featured Work section added
-  above the metrics dashboard for recruiter visibility (now 4 real projects:
-  BookNow, Browser Picker Pro, the Tabularis Cloudflare D1 plugin, and an
-  anonymized payroll/notification case study); Activity Graph now reads a
-  locally-cached SVG (the old live vercel.app embed was permanently
-  discontinued); Latest Blog Posts merges 3 blogs into a per-blog table; every
-  <table> in the file carries align="center" so the table box itself is
-  centered on the page, not just its inner text. See git history for the
-  prior order/content.
+Description: GitHub profile README for josejorge. Featured Work section now
+  sits near the end (right after Final Transmission, before the footer):
+  4 public headline projects (BookNow, Browser Picker Pro, the Tabularis
+  Cloudflare D1 plugin, Beacon) plus 8 anonymized private-repo case studies
+  in collapsible <details> groups by theme, so the section stays scannable
+  instead of bloating the page. Activity Graph reads a locally-cached SVG
+  (the old live vercel.app embed was permanently discontinued). Latest Blog
+  Posts merges 3 blogs into a per-blog table. Every <table> carries
+  align="center" so the table box itself is centered, not just its inner
+  text. See git history for the prior order/content.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
 Last edit date: 2026-09-14
-Version: 2.1.0
+Version: 3.0.0
 -->
 
 <!-- ===================================================== -->
@@ -66,61 +67,6 @@ Version: 2.1.0
 - 🤝 Exploring **Synergy Fork**
 - 💬 Ask me about **Web3 • Virtualization • Automation**
 - ⚡ Fun fact: *Clouds weigh ~1 million tons*
-
----
-
-# 🛠️ Featured Work
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-### 📅 BookNow — Appointment Booking Platform
-
-Production booking system live on **Cloudflare Pages + Functions**. Real-time Google Calendar availability checked across multiple calendars, Cloudflare Turnstile bot protection, Discord webhook alerts, and a `/outlook`-styled alternate booking UI modeled on Microsoft 365 Bookings — fully translated into 4 languages, zero-database architecture (Google Calendar *is* the database).
-
-**Stack:** Cloudflare Pages/Functions · Google Calendar API · Turnstile · Vanilla JS
-
-🔗 [github.com/josejorge/calendar-appointments](https://github.com/josejorge/calendar-appointments)
-
-</td>
-<td width="50%" valign="top">
-
-### 🖱️ Browser Picker Pro
-
-A Windows app that intercepts link clicks and lets you route them to the right browser — smart rules engine (domain/wildcard/regex), multi-profile support (Chrome/Firefox/Edge), VirusTotal + Google Safe Browsing checks, and a glassmorphism UI with 3D card-hover animations. Registers as the default HTTP/HTTPS handler without requiring admin rights.
-
-**Stack:** C# · .NET · WinUI · VirusTotal / Safe Browsing APIs
-
-🔗 [github.com/ParleeConseiller/browser-picker-pro](https://github.com/ParleeConseiller/browser-picker-pro)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🔌 Cloudflare D1 Plugin for Tabularis
-
-A Rust plugin for the open-source Tabularis database client, adding full Cloudflare D1 support: browse databases/tables/indexes/foreign keys, run paginated SQL, full DDL (create/alter/drop tables, indexes, views), and ER-diagram generation — all talking to Cloudflare's D1 REST API through Tabularis' own plugin architecture.
-
-**Stack:** Rust · Cloudflare D1 REST API · Plugin architecture
-
-🔗 [github.com/josejorge/tabularis_cloudflare_d1_plugin](https://github.com/josejorge/tabularis_cloudflare_d1_plugin)
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 Payroll & Notification Platform
-
-Designed and shipped a production payroll and in-app notification system for a home-services company — currently running live payroll for 30+ employees. Includes a write-time fan-out notification center (bell icon + slide-over panel, locale-neutral payloads) and bilingual (EN/ES) mass-communication tooling across email, SMS, and WhatsApp.
-
-**Stack:** PHP · MySQL · Production ops (SSH-deployed)
-
-*(Client project — code is private; described here as a case study.)*
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -482,6 +428,104 @@ Designed and shipped a production payroll and in-app notification system for a h
 ```
 
 </p>
+
+---
+
+# 🛠️ Featured Work
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 📅 BookNow — Appointment Booking Platform
+
+Production booking system on **Cloudflare Pages + Functions** — real-time multi-calendar Google Calendar sync, Turnstile bot protection, 4-language i18n, zero-database architecture.
+
+**Stack:** Cloudflare Pages/Functions · Google Calendar API · Turnstile
+
+🔗 [github.com/josejorge/calendar-appointments](https://github.com/josejorge/calendar-appointments)
+
+</td>
+<td width="50%" valign="top">
+
+### 🖱️ Browser Picker Pro
+
+Windows app that intercepts link clicks and routes them to the right browser — rules engine, multi-browser profiles, VirusTotal/Safe Browsing checks, glassmorphism UI.
+
+**Stack:** C# · .NET · WinUI
+
+🔗 [github.com/ParleeConseiller/browser-picker-pro](https://github.com/ParleeConseiller/browser-picker-pro)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔌 Cloudflare D1 Plugin for Tabularis
+
+Rust plugin adding full Cloudflare D1 support — browsing, paginated SQL, DDL, ER diagrams — to the open-source Tabularis database client.
+
+**Stack:** Rust · Cloudflare D1 REST API
+
+🔗 [github.com/josejorge/tabularis_cloudflare_d1_plugin](https://github.com/josejorge/tabularis_cloudflare_d1_plugin)
+
+</td>
+<td width="50%" valign="top">
+
+### 🛰️ Beacon
+
+Tiling, Wave-Terminal-style cockpit for the web apps you live in — WhatsApp, Gmail, Slack, Discord & more — each isolated, pre-warmed, and dockable anywhere.
+
+**Stack:** Electron · Node.js
+
+🔗 [github.com/ParleeConseiller/beacon](https://github.com/ParleeConseiller/beacon)
+
+</td>
+</tr>
+</table>
+
+<p align="center"><sub>Plus a long tail of client and internal work that isn't public — anonymized case studies below.</sub></p>
+
+<details>
+<summary><b>📂 More case studies — Client Systems</b></summary>
+
+<br>
+
+<table align="center">
+<tr><th>Case Study</th><th>What it does</th><th>Stack</th></tr>
+<tr><td>Payroll & Notification Platform</td><td>Production payroll + in-app notifications for a home-services company, 30+ employees.</td><td>PHP · MySQL</td></tr>
+<tr><td>ERP / CRM / Scheduling Platform</td><td>Client records, scheduling, and real-time appointment sync for a wellness-services business.</td><td>PHP · Cloudflare</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📂 More case studies — Internal Platforms</b></summary>
+
+<br>
+
+<table align="center">
+<tr><th>Case Study</th><th>What it does</th><th>Stack</th></tr>
+<tr><td>Multi-Channel Campaign System</td><td>One login sends SMS, WhatsApp, email & webhooks — three provider APIs behind a single interface.</td><td>Cloudflare Workers · D1</td></tr>
+<tr><td>Cross-Brand Notification Core</td><td>Push/notification platform spanning multiple product brands; new brands added via UI, no code.</td><td>Cloudflare Workers · D1</td></tr>
+<tr><td>Unified Payment Portal</td><td>Stripe-backed bill lookup & payment, shared across several business units, no card data touches own servers.</td><td>Cloudflare Workers · Stripe</td></tr>
+<tr><td>Unified Contact Routing</td><td>One contact form, dynamically themed/routed across 9+ destinations from a single codebase.</td><td>Cloudflare Workers</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📂 More case studies — Identity & Security</b></summary>
+
+<br>
+
+<table align="center">
+<tr><th>Case Study</th><th>What it does</th><th>Stack</th></tr>
+<tr><td>Multi-Tenant SSO</td><td>OIDC identity provider — one login across 6+ internal systems (ERP, virtualization, custom apps).</td><td>Cloudflare Worker · D1 · OIDC</td></tr>
+<tr><td>Security & Home-Lab Ecosystem</td><td>Personal security-research and home-lab automation — VPN mesh, reverse proxy, monitoring.</td><td>Homelab · VPN · Docker</td></tr>
+</table>
+
+</details>
 
 ---
 

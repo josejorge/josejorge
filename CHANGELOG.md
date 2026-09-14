@@ -5,10 +5,25 @@ Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
 Last edit date: 2026-09-14
-Version: 1.1.0
+Version: 1.2.0
 -->
 
 # Changelog
+
+## 2026-09-14 (3)
+
+- **Moved:** "Featured Work" relocated from right after About Me to just after "Final
+  Transmission", near the end of the profile — the top of the page stays the
+  KytheX/gaming hook, the engineering proof is now a scroll-down reward.
+- **Enriched:** added **Beacon** (public, ParleeConseiller) as a 4th headline project —
+  a tiling, Wave-Terminal-style cockpit for web communication apps.
+- **Added:** 8 anonymized private-repo case studies (payroll, ERP/CRM, multi-channel
+  campaigns, cross-brand notifications, payment portal, contact routing, SSO,
+  home-lab/security), grouped into 3 collapsible `<details>` categories — same
+  expand/collapse pattern as the Tech Stack section — so the section stays scannable
+  instead of turning into a wall of text. Surveyed every git repo under `H:\DEV`
+  (~80), checked owner + public/private status via the GitHub API for each, and
+  anonymized only the private ones per instruction.
 
 ## 2026-09-14 (2)
 
