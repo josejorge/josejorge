@@ -5,10 +5,26 @@ Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
 Last edit date: 2026-09-14
-Version: 1.0.0
+Version: 1.1.0
 -->
 
 # Changelog
+
+## 2026-09-14 (2)
+
+- **Fixed:** every `<table>` in the README (Featured Work, Current Projects, Latest
+  Blog Posts) now carries `align="center"`, so the table box itself is centered on the
+  page — a table's shrink-to-fit width isn't affected by `text-align`/`align` on an
+  ancestor, only by `align`/`margin` on the table element itself. Current Projects and
+  the blog-posts table were converted from Markdown pipe-table syntax to raw HTML tables
+  since Markdown-table syntax gives GitHub's renderer no way to attach that attribute.
+- **Enriched:** "Featured Work" now includes 4 projects instead of 2 — added
+  **Browser Picker Pro** (own Windows app, C#/.NET, rules engine + security API
+  integrations) and the **Cloudflare D1 Plugin for Tabularis** (own Rust plugin for an
+  open-source DB client). Two other local repos (`tabularis`, `waveterm`) were
+  deliberately excluded from consideration — they're personal forks of existing
+  open-source projects, not original work, so featuring them would misrepresent
+  authorship.
 
 ## 2026-09-14
 

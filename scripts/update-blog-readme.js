@@ -10,7 +10,7 @@
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
 // Last edit date: 2026-09-14
-// Version: 2.0.0
+// Version: 2.1.0
 
 const fs = require("fs");
 const path = require("path");
@@ -43,10 +43,15 @@ function decodeEntities(str) {
     .replace(/&#039;/g, "'");
 }
 
-// Markdown table cells break on a literal "|" — escape it rather than strip
-// it, so an em-dash-style title still reads correctly.
-function escapeForTableCell(str) {
-  return str.replace(/\|/g, "\\|");
+// The table is emitted as raw HTML (not Markdown pipe syntax) so it can
+// carry align="center" on <table> — GitHub's Markdown-table renderer gives
+// the <table> no attributes, and a table's own shrink-to-fit box isn't
+// centered by a text-align on an ancestor, only by align/margin on itself.
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function extractTag(itemXml, tag) {
@@ -119,26 +124,25 @@ async function fetchAllBlogs() {
   }
 }
 
-// Builds a Markdown table with one column per blog, rows aligned by recency
-// rank (row 1 = each blog's most recent post, etc). A blog with fewer posts
-// than others leaves the remaining cells in its column blank rather than
-// borrowing another blog's post.
+// Builds an HTML table (centered via align="center") with one column per
+// blog, rows aligned by recency rank (row 1 = each blog's most recent post,
+// etc). A blog with fewer posts than others leaves the remaining cells in
+// its column blank rather than borrowing another blog's post.
 function buildBlogTable(blogs) {
-  const header = `| ${blogs.map((b) => b.label).join(" | ")} |`;
-  const divider = `| ${blogs.map(() => "---").join(" | ")} |`;
+  const header = `<tr>${blogs.map((b) => `<th>${escapeHtml(b.label)}</th>`).join("")}</tr>`;
   const rowCount = Math.max(...blogs.map((b) => b.posts.length), 0);
 
   const rows = [];
   for (let i = 0; i < rowCount; i++) {
     const cells = blogs.map((b) => {
       const post = b.posts[i];
-      if (!post) return "";
-      return `[${escapeForTableCell(post.title)}](${post.url})`;
+      if (!post) return "<td></td>";
+      return `<td><a href="${post.url}">${escapeHtml(post.title)}</a></td>`;
     });
-    rows.push(`| ${cells.join(" | ")} |`);
+    rows.push(`<tr>${cells.join("")}</tr>`);
   }
 
-  return [header, divider, ...rows].join("\n");
+  return [`<table align="center">`, header, ...rows, `</table>`].join("\n");
 }
 
 function updateReadme(blogTable) {
