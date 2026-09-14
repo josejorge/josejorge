@@ -1,3 +1,17 @@
+# File: stats.yml
+# Description: Every 6 hours, regenerates the Top Languages card and the
+#   Activity Graph heatmap as static SVGs and commits them into /assets, so
+#   README.md embeds local files instead of live third-party badge URLs.
+#   The activity graph previously embedded https://github-readme-activity-graph.vercel.app
+#   directly, but that public deployment has been shut down (returns
+#   402 DEPLOYMENT_DISABLED) — ghchart.rshah.org is used instead, a
+#   long-stable, actively-maintained contribution heatmap SVG service.
+# Author: Jose-Jorge HERNANDEZ
+# Company: Parlee Conseiller, Inc.
+# Date: 2026-09-14
+# Last edit date: 2026-09-14
+# Version: 1.0.0
+
 name: Update GitHub Stats
 
 permissions:
@@ -29,12 +43,18 @@ jobs:
           path: assets/top-langs.svg
           token: ${{ secrets.JOSEJORGE_TOKEN }}
 
+      - name: Fetch Activity Graph heatmap
+        run: |
+          curl -sL --fail --max-time 30 \
+            "https://ghchart.rshah.org/0e75b6/josejorge" \
+            -o assets/activity-graph.svg
+
       - name: Commit and Push SVG
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add assets/top-langs.svg
+          git add assets/top-langs.svg assets/activity-graph.svg
 
           git commit -m "Update GitHub stats" || echo "No changes to commit"
 
