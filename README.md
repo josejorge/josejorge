@@ -1,11 +1,15 @@
 <!--
 File: README.md
-Description: GitHub profile README for josejorge — reordered so professional/DevOps proof sits above the KytheX/gaming persona content; see git history for the prior order.
+Description: GitHub profile README for josejorge. Featured Work section added
+  above the metrics dashboard for recruiter visibility; Activity Graph now
+  reads a locally-cached SVG (the old live vercel.app embed was permanently
+  discontinued); Latest Blog Posts now merges 3 blogs into a per-blog table.
+  See git history for the prior order/content.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
-Last edit date: 2026-07-27
-Version: 1.2
+Last edit date: 2026-09-14
+Version: 2.0.0
 -->
 
 <!-- ===================================================== -->
@@ -58,6 +62,37 @@ Version: 1.2
 - 🤝 Exploring **Synergy Fork**
 - 💬 Ask me about **Web3 • Virtualization • Automation**
 - ⚡ Fun fact: *Clouds weigh ~1 million tons*
+
+---
+
+# 🛠️ Featured Work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📅 BookNow — Appointment Booking Platform
+
+Production booking system live on **Cloudflare Pages + Functions**. Real-time Google Calendar availability checked across multiple calendars, Cloudflare Turnstile bot protection, Discord webhook alerts, and a `/outlook`-styled alternate booking UI modeled on Microsoft 365 Bookings — fully translated into 4 languages, zero-database architecture (Google Calendar *is* the database).
+
+**Stack:** Cloudflare Pages/Functions · Google Calendar API · Turnstile · Vanilla JS
+
+🔗 [github.com/josejorge/calendar-appointments](https://github.com/josejorge/calendar-appointments)
+
+</td>
+<td width="50%" valign="top">
+
+### 💰 Payroll & Notification Platform
+
+Designed and shipped a production payroll and in-app notification system for a home-services company — currently running live payroll for 30+ employees. Includes a write-time fan-out notification center (bell icon + slide-over panel, locale-neutral payloads) and bilingual (EN/ES) mass-communication tooling across email, SMS, and WhatsApp.
+
+**Stack:** PHP · MySQL · Production ops (SSH-deployed)
+
+*(Client project — code is private; described here as a case study.)*
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -229,7 +264,10 @@ Version: 1.2
 
 ### 📈 Activity Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=josejorge&theme=tokyo-night&hide_border=true"/>
+  <img src="./assets/activity-graph.svg" alt="Contribution activity graph"/>
+</p>
+<p align="center">
+  <i>Cached in-repo and refreshed every 6 hours — no more live third-party embed to break.</i>
 </p>
 
 ---
@@ -359,11 +397,14 @@ Version: 1.2
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- 📰 [The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past](https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/)
-- 📰 [Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem](https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/)
-- 📰 [Hades and the Roguelike That Made Dying Feel Like Progress](https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/)
-- 📰 [Metroid at 40: Why Getting Lost Was the Whole Point](https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/)
-- 📰 [Elden Ring on Switch 2: Portable Was the Right Call](https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/)<!-- BLOG-POST-LIST:END -->
+| KytheX | The Alz Diary | Tierra de Oz |
+| --- | --- | --- |
+| [The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past](https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/) | [Incontinence: Protecting Her Dignity Without Losing My Own](https://thealzdiary.com/2026/09/07/incontinence-protecting-her-dignity-without-losing-my-own/) | [Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé](https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/) |
+| [Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem](https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/) | [The Face I Didn’t Recognize Was Mine](https://thealzdiary.com/2026/08/31/the-face-i-didnt-recognize-was-mine/) | [Campeche — Playas, Pirámides y el Pan de Cazón](https://tierradeoz.com/campeche-playas-piramides-pan-de-cazon/) |
+| [Hades and the Roguelike That Made Dying Feel Like Progress](https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/) | [The Question She Asks Every Ten Minutes](https://thealzdiary.com/2026/08/24/the-question-she-asks-every-ten-minutes/) | [Marsella y Aix-en-Provence — El Sur de Francia a Nuestro Estilo](https://tierradeoz.com/marsella-aix-en-provence-sur-francia/) |
+| [Metroid at 40: Why Getting Lost Was the Whole Point](https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/) | [What I Would Say to the Disease, If It Could Hear Me](https://thealzdiary.com/2026/08/17/what-i-would-say-to-the-disease-if-it-could-hear-me/) | [Acapulco con Bebé — Nuestro Primer Viaje como Familia de Tres](https://tierradeoz.com/acapulco-primer-viaje-familia-bebe-cachito/) |
+| [Elden Ring on Switch 2: Portable Was the Right Call](https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/) | [What Her Hands Still Know: A Caregiver’s Poem](https://thealzdiary.com/2026/08/10/what-her-hands-still-know-a-caregivers-poem/) | [Praga — La Ciudad de los Cien Chapiteles y el Pato más Rico de Europa](https://tierradeoz.com/praga-republica-checa-ciudad-cien-chapiteles/) |
+<!-- BLOG-POST-LIST:END -->
 
 ---
 

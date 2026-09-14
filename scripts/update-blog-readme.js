@@ -1,21 +1,28 @@
 // File: update-blog-readme.js
-// Description: Fetches the KytheX blog RSS feed through a real headless
-//   browser (so Cloudflare's Bot Fight Mode JS challenge resolves the same
-//   way it would for a normal visitor) and refreshes the BLOG-POST-LIST
-//   block in README.md with the latest posts.
+// Description: Fetches the KytheX, The Alz Diary, and Tierra de Oz blog RSS
+//   feeds through a real headless browser (so any Cloudflare Bot Fight Mode
+//   JS challenge resolves the same way it would for a normal visitor — a
+//   plain HTTP client from a GitHub Actions runner's datacenter ASN can be
+//   challenged even where a residential IP isn't) and refreshes the
+//   BLOG-POST-LIST block in README.md with a 3-column table, one column per
+//   blog, most recent posts first.
 // Author: Jose-Jorge HERNANDEZ
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
-// Last edit date: 2026-09-11
-// Version: 1.1.0
+// Last edit date: 2026-09-14
+// Version: 2.0.0
 
 const fs = require("fs");
 const path = require("path");
 const { chromium } = require("playwright");
 
-const FEED_URL = "https://blog.kythex.com/feed";
+const FEEDS = [
+  { label: "KytheX", url: "https://blog.kythex.com/feed" },
+  { label: "The Alz Diary", url: "https://thealzdiary.com/feed" },
+  { label: "Tierra de Oz", url: "https://tierradeoz.com/feed" },
+];
 const README_PATH = path.join(__dirname, "..", "README.md");
-const MAX_POSTS = 5;
+const MAX_POSTS_PER_BLOG = 5;
 const START_MARKER = "<!-- BLOG-POST-LIST:START -->";
 const END_MARKER = "<!-- BLOG-POST-LIST:END -->";
 
@@ -34,6 +41,12 @@ function decodeEntities(str) {
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#039;/g, "'");
+}
+
+// Markdown table cells break on a literal "|" — escape it rather than strip
+// it, so an em-dash-style title still reads correctly.
+function escapeForTableCell(str) {
+  return str.replace(/\|/g, "\\|");
 }
 
 function extractTag(itemXml, tag) {
@@ -57,12 +70,36 @@ async function gotoAndRead(page, url) {
   return response.text();
 }
 
-async function fetchFeedXml() {
-  // A real browser is required here, not a plain HTTP client: Cloudflare's
-  // Bot Fight Mode issues a silent JS "managed challenge" to non-browser
-  // clients from datacenter ASNs — exactly what blocked GitHub Actions'
-  // hosted runners. Playwright's Chromium executes that challenge like any
-  // normal visitor.
+async function fetchFeedXml(page, url) {
+  let xml = await gotoAndRead(page, url);
+
+  // First response may be a Cloudflare challenge page instead of the feed
+  // (the challenge solves itself client-side after a few seconds). Give it
+  // time, then request the feed again with the now-cleared session.
+  if (!xml.includes("<item")) {
+    await page.waitForTimeout(8000);
+    xml = await gotoAndRead(page, url);
+  }
+
+  if (!xml.includes("<item")) {
+    throw new Error(
+      `Fetched content from ${url} does not look like an RSS feed (challenge may not have cleared).`
+    );
+  }
+  return xml;
+}
+
+function parsePosts(xml) {
+  const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
+  return items.slice(0, MAX_POSTS_PER_BLOG).map((item) => ({
+    title: extractTag(item, "title"),
+    url: extractTag(item, "link"),
+  }));
+}
+
+async function fetchAllBlogs() {
+  // One shared browser context is enough for all three feeds — each is a
+  // fresh navigation, so there's no session state to keep separate.
   const browser = await chromium.launch();
   try {
     const context = await browser.newContext({
@@ -71,40 +108,40 @@ async function fetchFeedXml() {
     });
     const page = await context.newPage();
 
-    let xml = await gotoAndRead(page, FEED_URL);
-
-    // First response may be Cloudflare's challenge page instead of the feed
-    // (the challenge solves itself client-side after a few seconds). Give it
-    // time, then request the feed again with the now-cleared session.
-    if (!xml.includes("<item")) {
-      await page.waitForTimeout(8000);
-      xml = await gotoAndRead(page, FEED_URL);
+    const results = [];
+    for (const feed of FEEDS) {
+      const xml = await fetchFeedXml(page, feed.url);
+      results.push({ label: feed.label, posts: parsePosts(xml) });
     }
-
-    if (!xml.includes("<item")) {
-      throw new Error(
-        "Fetched content does not look like an RSS feed (challenge may not have cleared)."
-      );
-    }
-    return xml;
+    return results;
   } finally {
     await browser.close();
   }
 }
 
-function buildBlogList(xml) {
-  const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
-  return items
-    .slice(0, MAX_POSTS)
-    .map((item) => {
-      const title = extractTag(item, "title");
-      const url = extractTag(item, "link");
-      return `\n- 📰 [${title}](${url})`;
-    })
-    .join("");
+// Builds a Markdown table with one column per blog, rows aligned by recency
+// rank (row 1 = each blog's most recent post, etc). A blog with fewer posts
+// than others leaves the remaining cells in its column blank rather than
+// borrowing another blog's post.
+function buildBlogTable(blogs) {
+  const header = `| ${blogs.map((b) => b.label).join(" | ")} |`;
+  const divider = `| ${blogs.map(() => "---").join(" | ")} |`;
+  const rowCount = Math.max(...blogs.map((b) => b.posts.length), 0);
+
+  const rows = [];
+  for (let i = 0; i < rowCount; i++) {
+    const cells = blogs.map((b) => {
+      const post = b.posts[i];
+      if (!post) return "";
+      return `[${escapeForTableCell(post.title)}](${post.url})`;
+    });
+    rows.push(`| ${cells.join(" | ")} |`);
+  }
+
+  return [header, divider, ...rows].join("\n");
 }
 
-function updateReadme(blogList) {
+function updateReadme(blogTable) {
   const readme = fs.readFileSync(README_PATH, "utf8");
   const startIdx = readme.indexOf(START_MARKER);
   const endIdx = readme.indexOf(END_MARKER);
@@ -113,16 +150,18 @@ function updateReadme(blogList) {
   }
   const updated =
     readme.slice(0, startIdx + START_MARKER.length) +
-    blogList +
+    "\n" +
+    blogTable +
+    "\n" +
     readme.slice(endIdx);
   fs.writeFileSync(README_PATH, updated);
 }
 
 (async () => {
-  const xml = await fetchFeedXml();
-  const blogList = buildBlogList(xml);
-  updateReadme(blogList);
-  console.log("README.md blog post list updated.");
+  const blogs = await fetchAllBlogs();
+  const blogTable = buildBlogTable(blogs);
+  updateReadme(blogTable);
+  console.log("README.md blog post table updated.");
 })().catch((err) => {
   console.error(err);
   process.exit(1);
