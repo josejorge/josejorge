@@ -1,7 +1,7 @@
 # File: blog-posts.yml
 # Description: Weekly workflow that refreshes the "Latest Blog Posts" section
-#   of README.md as a 3-column table from the KytheX, The Alz Diary, and
-#   Tierra de Oz blog RSS feeds. All 3 are fetched through a real headless
+#   of README.md as a 4-column table from the KytheX, The Alz Diary,
+#   Tierra de Oz, and Substack RSS feeds. All 4 are fetched through a real headless
 #   browser (see scripts/update-blog-readme.js), uniformly, because
 #   Cloudflare's Bot Fight Mode can silently JS-challenge plain HTTP clients
 #   from a GitHub-hosted runner's datacenter ASN even on feeds that pass fine
@@ -10,8 +10,8 @@
 # Author: Jose-Jorge HERNANDEZ
 # Company: Parlee Conseiller, Inc.
 # Date: 2026-09-11
-# Last edit date: 2026-09-14
-# Version: 1.1.0
+# Last edit date: 2026-09-21
+# Version: 1.2.0
 
 name: Update Blog Posts
 

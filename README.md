@@ -13,8 +13,8 @@ Description: GitHub profile README for josejorge. Featured Work section now
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
-Last edit date: 2026-09-14
-Version: 3.0.0
+Last edit date: 2026-09-21
+Version: 3.0.1
 -->
 
 <!-- ===================================================== -->
@@ -372,12 +372,12 @@ Version: 3.0.0
 
 <!-- BLOG-POST-LIST:START -->
 <table align="center">
-<tr><th>KytheX</th><th>The Alz Diary</th><th>Tierra de Oz</th></tr>
-<tr><td><a href="https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/">The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past</a></td><td><a href="https://thealzdiary.com/2026/09/07/incontinence-protecting-her-dignity-without-losing-my-own/">Incontinence: Protecting Her Dignity Without Losing My Own</a></td><td><a href="https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/">Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé</a></td></tr>
-<tr><td><a href="https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/">Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem</a></td><td><a href="https://thealzdiary.com/2026/08/31/the-face-i-didnt-recognize-was-mine/">The Face I Didn’t Recognize Was Mine</a></td><td><a href="https://tierradeoz.com/campeche-playas-piramides-pan-de-cazon/">Campeche — Playas, Pirámides y el Pan de Cazón</a></td></tr>
-<tr><td><a href="https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/">Hades and the Roguelike That Made Dying Feel Like Progress</a></td><td><a href="https://thealzdiary.com/2026/08/24/the-question-she-asks-every-ten-minutes/">The Question She Asks Every Ten Minutes</a></td><td><a href="https://tierradeoz.com/marsella-aix-en-provence-sur-francia/">Marsella y Aix-en-Provence — El Sur de Francia a Nuestro Estilo</a></td></tr>
-<tr><td><a href="https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/">Metroid at 40: Why Getting Lost Was the Whole Point</a></td><td><a href="https://thealzdiary.com/2026/08/17/what-i-would-say-to-the-disease-if-it-could-hear-me/">What I Would Say to the Disease, If It Could Hear Me</a></td><td><a href="https://tierradeoz.com/acapulco-primer-viaje-familia-bebe-cachito/">Acapulco con Bebé — Nuestro Primer Viaje como Familia de Tres</a></td></tr>
-<tr><td><a href="https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/">Elden Ring on Switch 2: Portable Was the Right Call</a></td><td><a href="https://thealzdiary.com/2026/08/10/what-her-hands-still-know-a-caregivers-poem/">What Her Hands Still Know: A Caregiver’s Poem</a></td><td><a href="https://tierradeoz.com/praga-republica-checa-ciudad-cien-chapiteles/">Praga — La Ciudad de los Cien Chapiteles y el Pato más Rico de Europa</a></td></tr>
+<tr><th>KytheX</th><th>The Alz Diary</th><th>Tierra de Oz</th><th>Substack</th></tr>
+<tr><td><a href="https://blog.kythex.com/the-remake-boom-why-gaming-keeps-rebuilding-its-own-past/">The Remake Boom: Why Gaming Keeps Rebuilding Its Own Past</a></td><td><a href="https://thealzdiary.com/2026/09/07/incontinence-protecting-her-dignity-without-losing-my-own/">Incontinence: Protecting Her Dignity Without Losing My Own</a></td><td><a href="https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/">Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé</a></td><td><a href="https://josejorgehz.substack.com/p/y-ahora-que-hacemos-con-la-inteligencia">¿Y ahora qué hacemos con la inteligencia artificial?</a></td></tr>
+<tr><td><a href="https://blog.kythex.com/sonic-the-hedgehog-at-35-the-speed-game-that-never-solved-its-own-problem/">Sonic the Hedgehog at 35: The Speed Game That Never Solved Its Own Problem</a></td><td><a href="https://thealzdiary.com/2026/08/31/the-face-i-didnt-recognize-was-mine/">The Face I Didn’t Recognize Was Mine</a></td><td><a href="https://tierradeoz.com/campeche-playas-piramides-pan-de-cazon/">Campeche — Playas, Pirámides y el Pan de Cazón</a></td><td></td></tr>
+<tr><td><a href="https://blog.kythex.com/hades-and-the-roguelike-that-made-dying-feel-like-progress-2/">Hades and the Roguelike That Made Dying Feel Like Progress</a></td><td><a href="https://thealzdiary.com/2026/08/24/the-question-she-asks-every-ten-minutes/">The Question She Asks Every Ten Minutes</a></td><td><a href="https://tierradeoz.com/marsella-aix-en-provence-sur-francia/">Marsella y Aix-en-Provence — El Sur de Francia a Nuestro Estilo</a></td><td></td></tr>
+<tr><td><a href="https://blog.kythex.com/metroid-at-40-why-getting-lost-was-the-whole-point-2/">Metroid at 40: Why Getting Lost Was the Whole Point</a></td><td><a href="https://thealzdiary.com/2026/08/17/what-i-would-say-to-the-disease-if-it-could-hear-me/">What I Would Say to the Disease, If It Could Hear Me</a></td><td><a href="https://tierradeoz.com/acapulco-primer-viaje-familia-bebe-cachito/">Acapulco con Bebé — Nuestro Primer Viaje como Familia de Tres</a></td><td></td></tr>
+<tr><td><a href="https://blog.kythex.com/elden-ring-on-switch-2-portable-was-the-right-call-2/">Elden Ring on Switch 2: Portable Was the Right Call</a></td><td><a href="https://thealzdiary.com/2026/08/10/what-her-hands-still-know-a-caregivers-poem/">What Her Hands Still Know: A Caregiver’s Poem</a></td><td><a href="https://tierradeoz.com/praga-republica-checa-ciudad-cien-chapiteles/">Praga — La Ciudad de los Cien Chapiteles y el Pato más Rico de Europa</a></td><td></td></tr>
 </table>
 <!-- BLOG-POST-LIST:END -->
 
