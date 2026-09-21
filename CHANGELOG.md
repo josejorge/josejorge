@@ -4,11 +4,20 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-09-14
-Version: 1.2.0
+Last edit date: 2026-09-21
+Version: 1.2.1
 -->
 
 # Changelog
+
+## 2026-09-21
+
+- **Added:** a 4th "Substack" column (https://josejorgehz.substack.com/feed) to the
+  Latest Blog Posts table. `scripts/update-blog-readme.js` gets one new `FEEDS`
+  entry (Substack serves standard RSS, so the existing parser needs no changes);
+  `blog-posts.yml` header comments updated. README seeded with the current post; the
+  weekly workflow will refresh it. Substack currently has 1 post, so the rest of
+  its column is blank until more are published.
 
 ## 2026-09-14 (3)
 

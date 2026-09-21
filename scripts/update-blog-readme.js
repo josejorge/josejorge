@@ -1,16 +1,16 @@
 // File: update-blog-readme.js
-// Description: Fetches the KytheX, The Alz Diary, and Tierra de Oz blog RSS
-//   feeds through a real headless browser (so any Cloudflare Bot Fight Mode
+// Description: Fetches the KytheX, The Alz Diary, Tierra de Oz, and Substack
+//   RSS feeds through a real headless browser (so any Cloudflare Bot Fight Mode
 //   JS challenge resolves the same way it would for a normal visitor — a
 //   plain HTTP client from a GitHub Actions runner's datacenter ASN can be
 //   challenged even where a residential IP isn't) and refreshes the
-//   BLOG-POST-LIST block in README.md with a 3-column table, one column per
+//   BLOG-POST-LIST block in README.md with a 4-column table, one column per
 //   blog, most recent posts first.
 // Author: Jose-Jorge HERNANDEZ
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
-// Last edit date: 2026-09-14
-// Version: 2.1.0
+// Last edit date: 2026-09-21
+// Version: 2.2.0
 
 const fs = require("fs");
 const path = require("path");
@@ -20,6 +20,8 @@ const FEEDS = [
   { label: "KytheX", url: "https://blog.kythex.com/feed" },
   { label: "The Alz Diary", url: "https://thealzdiary.com/feed" },
   { label: "Tierra de Oz", url: "https://tierradeoz.com/feed" },
+  // Substack publication — standard RSS, same <item>/<title>/<link> shape.
+  { label: "Substack", url: "https://josejorgehz.substack.com/feed" },
 ];
 const README_PATH = path.join(__dirname, "..", "README.md");
 const MAX_POSTS_PER_BLOG = 5;
@@ -103,7 +105,7 @@ function parsePosts(xml) {
 }
 
 async function fetchAllBlogs() {
-  // One shared browser context is enough for all three feeds — each is a
+  // One shared browser context is enough for all the feeds — each is a
   // fresh navigation, so there's no session state to keep separate.
   const browser = await chromium.launch();
   try {
