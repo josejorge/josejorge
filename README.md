@@ -13,8 +13,8 @@ Description: GitHub profile README for josejorge. Featured Work section now
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
-Last edit date: 2026-09-21
-Version: 3.0.1
+Last edit date: 2026-09-22
+Version: 3.0.2
 -->
 
 <!-- ===================================================== -->
@@ -254,7 +254,7 @@ Version: 3.0.1
 ---
 
 <p align="center">
-  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12" />
+  <img src="https://stats.josejorge.com/api/top-langs/?username=josejorge&layout=compact&theme=tokyonight&hide_border=true&langs_count=12&hide=rich%20text%20format" />
 </p>
 
 ---

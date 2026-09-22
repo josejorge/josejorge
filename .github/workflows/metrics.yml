@@ -1,3 +1,12 @@
+# File: metrics.yml
+# Description: Hourly lowlighter/metrics run that regenerates github-metrics.svg
+#   (profile header, activity, languages, isocalendar, lines) for README.md.
+# Author: Jose-Jorge HERNANDEZ
+# Company: Parlee Conseiller, Inc.
+# Date: 2026-06-19
+# Last edit date: 2026-09-22
+# Version: 1.0.0
+
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
@@ -40,6 +49,8 @@ jobs:
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
+          # RTF is document files, not code; keep it out of the languages chart
+          plugin_languages_ignored: rich text format
           plugin_languages_limit: 12
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14

@@ -4,11 +4,17 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-09-21
-Version: 1.2.1
+Last edit date: 2026-09-22
+Version: 1.2.2
 -->
 
 # Changelog
+
+## 2026-09-22
+
+- **Changed:** hid "Rich Text Format" from the top languages. Added `hide=rich%20text%20format`
+  to the live top-langs card in README.md and to the `top-langs` card in `stats.yml`, and
+  `plugin_languages_ignored: rich text format` to `metrics.yml` (github-metrics.svg).
 
 ## 2026-09-21
 
