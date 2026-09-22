@@ -9,8 +9,8 @@
 # Author: Jose-Jorge HERNANDEZ
 # Company: Parlee Conseiller, Inc.
 # Date: 2026-09-14
-# Last edit date: 2026-09-14
-# Version: 1.0.0
+# Last edit date: 2026-09-22
+# Version: 1.0.1
 
 name: Update GitHub Stats
 
@@ -39,7 +39,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2.0.0
         with:
           card: top-langs
-          options: username=josejorge&layout=compact&langs_count=8
+          options: username=josejorge&layout=compact&langs_count=8&hide=rich%20text%20format
           path: assets/top-langs.svg
           token: ${{ secrets.JOSEJORGE_TOKEN }}
 
