@@ -4,8 +4,8 @@
 # Author: Jose-Jorge HERNANDEZ
 # Company: Parlee Conseiller, Inc.
 # Date: 2026-06-19
-# Last edit date: 2026-09-22
-# Version: 1.0.0
+# Last edit date: 2026-09-24
+# Version: 1.1.0
 
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
@@ -60,4 +60,7 @@ jobs:
           plugin_lines: yes
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
+          # GitHub reports a phantom contributor with a null author for this repo, which crashes the
+          # lines plugin (TypeError reading "login") and fails the whole run; skip the repo until fixed upstream
+          plugin_lines_skipped: personal-automations
           plugin_lines_sections: base
