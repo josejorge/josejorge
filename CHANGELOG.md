@@ -4,11 +4,20 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-09-22
-Version: 1.2.2
+Last edit date: 2026-09-24
+Version: 1.2.3
 -->
 
 # Changelog
+
+## 2026-09-24
+
+- **Fixed:** the hourly `Metrics` workflow had been failing since 2026-09-21. GitHub's contributor
+  stats for the private `personal-automations` repo contain a phantom contributor with a null
+  author, and the `lines` plugin of lowlighter/metrics crashes on it (`Cannot read properties of
+  null (reading 'login')`), leaving the template without `plugins.lines.sections`. Added
+  `plugin_lines_skipped: personal-automations` to `metrics.yml`. Not related to the parleehome
+  migration.
 
 ## 2026-09-22
 
