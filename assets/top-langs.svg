@@ -138,7 +138,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="81.16"
+          width="81.14"
           height="8"
           fill="#e34c26"
         />
@@ -146,9 +146,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="81.16"
+          x="81.14"
           y="0"
-          width="49.81"
+          width="49.8"
           height="8"
           fill="#f1e05a"
         />
@@ -156,9 +156,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="130.97"
+          x="130.94"
           y="0"
-          width="33.98"
+          width="33.97"
           height="8"
           fill="#3178c6"
         />
@@ -166,7 +166,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="164.95"
+          x="164.91"
           y="0"
           width="28.92"
           height="8"
@@ -176,7 +176,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="193.87"
+          x="193.82999999999998"
           y="0"
           width="17.22"
           height="8"
@@ -186,7 +186,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="211.09"
+          x="211.04999999999998"
           y="0"
           width="14.4"
           height="8"
@@ -196,9 +196,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="225.49"
+          x="225.45"
           y="0"
-          width="14.27"
+          width="14.33"
           height="8"
           fill="#DA5B0B"
         />
@@ -206,7 +206,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="239.76000000000002"
+          x="239.78"
           y="0"
           width="10.22"
           height="8"
@@ -261,7 +261,7 @@
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#DA5B0B" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Jupyter Notebook 5.71%
+        Jupyter Notebook 5.73%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
