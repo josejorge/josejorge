@@ -12,7 +12,7 @@
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
 // Last edit date: 2026-09-29
-// Version: 3.1.0
+// Version: 3.1.1
 
 const fs = require("fs");
 const path = require("path");
@@ -167,11 +167,21 @@ async function fetchFeedBody(page, feed) {
 }
 
 // Reads Substack posts (newest first) from the personal feed aggregator's
-// public JSON, using plain fetch — it's our own domain, not Substack's.
-async function fetchSubstackFromPersonalFeed() {
-  const res = await fetch(PERSONAL_FEED_URL);
-  if (!res.ok) throw new Error(`Personal feed returned HTTP ${res.status}.`);
-  const data = await res.json();
+// public JSON. Goes through the headless browser like every other feed: the
+// domain sits behind Cloudflare, which 403s plain HTTP clients from the
+// runner's datacenter ASN (confirmed on 2026-09-29) but lets a browser through.
+async function fetchSubstackFromPersonalFeed(page) {
+  let body = await gotoAndRead(page, PERSONAL_FEED_URL);
+  if (!body.trim().startsWith("{")) {
+    await page.waitForTimeout(8000);
+    body = await gotoAndRead(page, PERSONAL_FEED_URL);
+  }
+  let data;
+  try {
+    data = JSON.parse(body);
+  } catch (err) {
+    throw new Error("Personal feed response is not JSON (challenge?).");
+  }
   const posts = (data.items || [])
     .filter((item) => item.source === "substack")
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
@@ -213,7 +223,7 @@ async function fetchAllBlogs() {
             posts = parseSubstackJson(await fetchFeedBody(page, feed));
           } catch (err) {
             console.warn(`[warn] Substack direct fetch failed (${err.message}); trying personal feed.`);
-            posts = await fetchSubstackFromPersonalFeed();
+            posts = await fetchSubstackFromPersonalFeed(page);
           }
         } else {
           posts = parsePosts(await fetchFeedBody(page, feed));

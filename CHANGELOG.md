@@ -5,7 +5,7 @@ Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
 Last edit date: 2026-09-29
-Version: 1.2.5
+Version: 1.2.6
 -->
 
 # Changelog
@@ -19,7 +19,8 @@ Version: 1.2.5
   of the RSS feed, and a feed that fails keeps that blog's previous links rather than aborting; the run
   only fails if every feed fails.
 - **Changed:** the JSON archive API is also challenged from the runner (confirmed by a manual run), so
-  Substack now falls back to `https://feed.josejorge.com/feed.json` (script v3.1.0).
+  Substack now falls back to `https://feed.josejorge.com/feed.json` (script v3.1.0). The runner got HTTP 403 from a plain fetch of that URL (Cloudflare on
+  our own zone), so v3.1.1 reads it through the headless browser like the other feeds.
 - **Changed:** `blog-posts.yml` (v1.3.0) now runs Wednesday and Saturday instead of Wednesday only.
 - Refreshed the blog table with the newest KytheX, The Alz Diary and Substack posts.
 
