@@ -5,7 +5,7 @@ Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
 Last edit date: 2026-09-29
-Version: 1.2.4
+Version: 1.2.5
 -->
 
 # Changelog
@@ -18,6 +18,8 @@ Version: 1.2.4
 - **Changed:** `update-blog-readme.js` (v3.0.0) now reads Substack from its JSON archive API instead
   of the RSS feed, and a feed that fails keeps that blog's previous links rather than aborting; the run
   only fails if every feed fails.
+- **Changed:** the JSON archive API is also challenged from the runner (confirmed by a manual run), so
+  Substack now falls back to `https://feed.josejorge.com/feed.json` (script v3.1.0).
 - **Changed:** `blog-posts.yml` (v1.3.0) now runs Wednesday and Saturday instead of Wednesday only.
 - Refreshed the blog table with the newest KytheX, The Alz Diary and Substack posts.
 

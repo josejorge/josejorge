@@ -12,7 +12,7 @@
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-09-11
 // Last edit date: 2026-09-29
-// Version: 3.0.0
+// Version: 3.1.0
 
 const fs = require("fs");
 const path = require("path");
@@ -20,6 +20,11 @@ const { chromium } = require("playwright");
 
 const SUBSTACK_ARCHIVE_URL =
   "https://josejorgehz.substack.com/api/v1/archive?sort=new&limit=5";
+
+// Second source for Substack when its own endpoints are challenged from the
+// runner: the personal feed aggregator (which already ingests Substack and
+// is served from our own domain) publishes all items as JSON.
+const PERSONAL_FEED_URL = "https://feed.josejorge.com/feed.json";
 
 const FEEDS = [
   { label: "KytheX", url: "https://blog.kythex.com/feed" },
@@ -161,6 +166,21 @@ async function fetchFeedBody(page, feed) {
   return body;
 }
 
+// Reads Substack posts (newest first) from the personal feed aggregator's
+// public JSON, using plain fetch — it's our own domain, not Substack's.
+async function fetchSubstackFromPersonalFeed() {
+  const res = await fetch(PERSONAL_FEED_URL);
+  if (!res.ok) throw new Error(`Personal feed returned HTTP ${res.status}.`);
+  const data = await res.json();
+  const posts = (data.items || [])
+    .filter((item) => item.source === "substack")
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, MAX_POSTS_PER_BLOG)
+    .map((item) => ({ title: item.title, url: item.url }));
+  if (posts.length === 0) throw new Error("Personal feed has no Substack items.");
+  return posts;
+}
+
 function parsePosts(xml) {
   const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
   return items.slice(0, MAX_POSTS_PER_BLOG).map((item) => ({
@@ -187,9 +207,17 @@ async function fetchAllBlogs() {
     const results = [];
     for (const feed of FEEDS) {
       try {
-        const body = await fetchFeedBody(page, feed);
-        const posts =
-          feed.kind === "substack-json" ? parseSubstackJson(body) : parsePosts(body);
+        let posts;
+        if (feed.kind === "substack-json") {
+          try {
+            posts = parseSubstackJson(await fetchFeedBody(page, feed));
+          } catch (err) {
+            console.warn(`[warn] Substack direct fetch failed (${err.message}); trying personal feed.`);
+            posts = await fetchSubstackFromPersonalFeed();
+          }
+        } else {
+          posts = parsePosts(await fetchFeedBody(page, feed));
+        }
         results.push({ label: feed.label, posts });
       } catch (err) {
         // Keep this blog's previous links rather than aborting every column.
