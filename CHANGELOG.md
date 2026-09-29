@@ -4,11 +4,22 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-09-24
-Version: 1.2.3
+Last edit date: 2026-09-29
+Version: 1.2.4
 -->
 
 # Changelog
+
+## 2026-09-29
+
+- **Fixed:** the `Update Blog Posts` workflow failed on 2026-09-23 and left the README stale. Substack
+  served a challenge page to the GitHub runner, and `update-blog-readme.js` aborted the entire run on
+  any single feed failure, so none of the four columns refreshed.
+- **Changed:** `update-blog-readme.js` (v3.0.0) now reads Substack from its JSON archive API instead
+  of the RSS feed, and a feed that fails keeps that blog's previous links rather than aborting; the run
+  only fails if every feed fails.
+- **Changed:** `blog-posts.yml` (v1.3.0) now runs Wednesday and Saturday instead of Wednesday only.
+- Refreshed the blog table with the newest KytheX, The Alz Diary and Substack posts.
 
 ## 2026-09-24
 
