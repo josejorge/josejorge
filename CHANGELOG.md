@@ -4,11 +4,19 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-09-29
-Version: 1.2.6
+Last edit date: 2026-10-09
+Version: 1.3.0
 -->
 
 # Changelog
+
+## 2026-10-09
+
+- **Fixed:** the Grafana dashboard screenshot showed "No data" on every panel because its metrics feed
+  (an Alloy agent on the retired parleehome server) was gone. A new agent now pushes to the same
+  Grafana Cloud stack; no dashboard or link changes.
+- **Changed:** `scripts/capture.js` (v1.1.0) captures a taller, full-page screenshot so the lower
+  metric rows (memory, disk, etc.) are included, not just the top of the dashboard.
 
 ## 2026-09-29
 
