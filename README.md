@@ -216,7 +216,7 @@ Version: 3.0.3
 [![Grafana Dashboard](./assets/dashboard.png)](https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d)
 
 <p align="center">
-  <i>This Grafana public snapshot gets automatically updated once a day at around 10 pm (Mexico time) 👀</i>
+  <i>This Grafana public snapshot gets automatically updated 👀</i>
 </p>
 
 ---
