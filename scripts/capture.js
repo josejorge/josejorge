@@ -4,7 +4,7 @@
 // Company: Parlee Conseiller, Inc.
 // Date: 2026-07-27
 // Last edit date: 2026-10-09
-// Version: 1.1.0
+// Version: 1.1.1
 
 const { chromium } = require('playwright');
 const path = require('path');
@@ -13,7 +13,7 @@ const fs = require('fs');
 // Viewport size in pixels. The height is tall on purpose so every panel row
 // (CPU, memory, disk, network...) is rendered at once instead of being cut off.
 const VIEWPORT_WIDTH = 1600;
-const VIEWPORT_HEIGHT = 2600;
+const VIEWPORT_HEIGHT = 1800;
 
 (async () => {
   try {
