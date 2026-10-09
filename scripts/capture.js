@@ -1,6 +1,19 @@
+// File: capture.js
+// Description: Screenshots the public Grafana HomeLAB dashboard into assets/dashboard.png (run by update-dashboard.yml).
+// Author: Jose-Jorge HERNANDEZ
+// Company: Parlee Conseiller, Inc.
+// Date: 2026-07-27
+// Last edit date: 2026-10-09
+// Version: 1.1.0
+
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
+
+// Viewport size in pixels. The height is tall on purpose so every panel row
+// (CPU, memory, disk, network...) is rendered at once instead of being cut off.
+const VIEWPORT_WIDTH = 1600;
+const VIEWPORT_HEIGHT = 2600;
 
 (async () => {
   try {
@@ -12,8 +25,8 @@ const fs = require('fs');
 
     const page = await browser.newPage({
       viewport: {
-        width: 1600,
-        height: 900
+        width: VIEWPORT_WIDTH,
+        height: VIEWPORT_HEIGHT
       }
     });
 
@@ -46,8 +59,8 @@ const fs = require('fs');
     await page.screenshot({
       path: outputPath,
 
-      // safer for Grafana dashboards
-      fullPage: false
+      // capture the whole page so lower panel rows are included
+      fullPage: true
     });
 
     console.log('Screenshot saved!');
