@@ -13,8 +13,8 @@ Description: GitHub profile README for josejorge. Featured Work section now
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller
 Date: 2026-06-19
-Last edit date: 2026-09-22
-Version: 3.0.2
+Last edit date: 2026-10-09
+Version: 3.0.3
 -->
 
 <!-- ===================================================== -->
@@ -216,7 +216,7 @@ Version: 3.0.2
 [![Grafana Dashboard](./assets/dashboard.png)](https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d)
 
 <p align="center">
-  <i>This Grafana public snapshot gets automatically updated every six hours 👀</i>
+  <i>This Grafana public snapshot gets automatically updated once a day at around 10 pm (Mexico time) 👀</i>
 </p>
 
 ---

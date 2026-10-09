@@ -5,13 +5,15 @@ Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
 Last edit date: 2026-10-09
-Version: 1.3.0
+Version: 1.3.1
 -->
 
 # Changelog
 
 ## 2026-10-09
 
+- **Changed:** the `Update Grafana Dashboard` workflow now runs once a day at 04:00 UTC (10 pm Mexico
+  time) instead of every six hours; the README caption says so. It can still be run manually.
 - **Fixed:** the Grafana dashboard screenshot showed "No data" on every panel because its metrics feed
   (an Alloy agent on the retired parleehome server) was gone. A new agent now pushes to the same
   Grafana Cloud stack; no dashboard or link changes.
