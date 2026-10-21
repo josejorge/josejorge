@@ -18,7 +18,9 @@ Version: 3.0.3
 -->
 
 <!-- ===================================================== -->
+
 <!--                ⚡ KYTHEX / JOE PROFILE ⚡              -->
+
 <!-- ===================================================== -->
 
 <p align="center">
@@ -26,7 +28,9 @@ Version: 3.0.3
 </p>
 
 <!-- ===================================================== -->
+
 <!--                ANIMATED TERMINAL INTRO                -->
+
 <!-- ===================================================== -->
 
 <p align="center">
@@ -56,11 +60,13 @@ Version: 3.0.3
 + Role: Senior Operations Manager | Tech Architect
 + Day job: Senior Manager, IT Ops & DevOps @ Thales Group (Defense & Digital Security)
 + Focus: Cloud • Automation • Cybersecurity • GameDev
-+ Ecosystem: Parlee • CyperZaX (personal security/home-lab project) • GoDGuilD
++ Ecosystem: Parlee • Ancelot • Apharenxis • CyperZaX • GoDGuilD
 + Current Mission: Building scalable and secure ecosystems
 ```
+
 <!-- ===================== ABOUT ===================== -->
-- 🔒 Professional confidentiality practice comes from Thales' defense-sector standards — CyperZaX below is a personal home-lab/security project, not a professional credential.
+
+- 🔒 Professional confidentiality practice comes from Thales' defense-sector standards.
 - 🔭 Working on **Home Automation + Smart Secure Environments**
 - 🌱 Learning **Angular • React • Vue**
 - 👯 Collaborating on **RunningRiot**
@@ -150,7 +156,6 @@ Version: 3.0.3
 
 </details>
 
-
 <details>
 <summary><b>🗄️ Databases</b></summary>
 
@@ -162,7 +167,6 @@ Version: 3.0.3
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQLServer-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
 <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>
-
 
 </p>
 
@@ -209,6 +213,7 @@ Version: 3.0.3
 </p>
 
 🔴 Live dashboard:
+
 <p align="center">
   https://josejorgehz.grafana.net/public-dashboards/1846f6b4c2c6454d90a3683f26d3414d
 </p>
@@ -230,6 +235,7 @@ Version: 3.0.3
 ---
 
 ### 🔥 Streak Stats
+
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=josejorge&theme=tokyonight&hide_border=true"/>
 </p>
@@ -237,6 +243,7 @@ Version: 3.0.3
 ---
 
 ### 📈 Activity Graph
+
 <p align="center">
   <img src="./assets/activity-graph.svg" alt="Contribution activity graph"/>
 </p>
@@ -247,6 +254,7 @@ Version: 3.0.3
 ---
 
 ### 🏆 Achievements
+
 <p align="center">
   <img src="https://trophies.josejorge.com/?username=josejorge&theme=tokyonight&no-frame=true&row=1&column=7"/>
 </p>
@@ -371,6 +379,7 @@ Version: 3.0.3
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+
 <table align="center">
 <tr><th>KytheX</th><th>The Alz Diary</th><th>Tierra de Oz</th><th>Substack</th></tr>
 <tr><td><a href="https://blog.kythex.com/quakes-engine-fingerprints-are-still-on-every-shooter-you-play/">Quake’s Engine Fingerprints Are Still on Every Shooter You Play</a></td><td><a href="https://thealzdiary.com/2026/10/19/the-folder-in-the-drawer-what-power-of-attorney-actually-means/">The Folder in the Drawer: What Power of Attorney Actually Means</a></td><td><a href="https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/">Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé</a></td><td><a href="https://josejorgehz.substack.com/p/sabe-una-inteligencia-artificial">¿Sabe una inteligencia artificial cuándo no sabe algo?</a></td></tr>
@@ -412,21 +421,6 @@ Version: 3.0.3
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=josejorge&label=Visitors&color=0e75b6&style=for-the-badge"/>
-</p>
-
----
-
-# ⚡ Final Transmission
-
-<p align="center">
-
-```diff
-+ SYSTEM STATUS: OPERATIONAL
-+ GOdGUILd NETWORK: CONNECTED
-+ CYPERZAX SECURITY: ACTIVE
-+ PARLEE ECOSYSTEM: EXPANDING
-```
-
 </p>
 
 ---
@@ -530,6 +524,7 @@ Tiling, Wave-Terminal-style cockpit for the web apps you live in — WhatsApp, G
 ---
 
 <!-- ===================== FOOTER ===================== -->
+
 <p align="center">
   ⚡ Built with passion, automation, and a bit of chaos ⚡
 </p>
