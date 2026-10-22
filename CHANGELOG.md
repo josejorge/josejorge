@@ -4,11 +4,18 @@ Description: Change log for the josejorge/josejorge GitHub profile README repo.
 Author: Jose-Jorge HERNANDEZ
 Company: Parlee Conseiller, Inc.
 Date: 2026-09-14
-Last edit date: 2026-10-09
-Version: 1.4.0
+Last edit date: 2026-10-22
+Version: 1.5.0
 -->
 
 # Changelog
+
+## 2026-10-22
+
+- **Security:** `technical_memory/technical_memory.ipynb` (v3.1.0) no longer names the client behind the
+  anonymized case study or lists private repository names; those passages now use generic wording,
+  matching the anonymized Featured Work section. Git history was rewritten the same way, so earlier
+  commits no longer carry the names either (all commit IDs changed).
 
 ## 2026-10-09
 
