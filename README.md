@@ -379,7 +379,6 @@ Version: 3.0.3
 # 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-
 <table align="center">
 <tr><th>KytheX</th><th>The Alz Diary</th><th>Tierra de Oz</th><th>Substack</th></tr>
 <tr><td><a href="https://blog.kythex.com/quakes-engine-fingerprints-are-still-on-every-shooter-you-play/">Quake’s Engine Fingerprints Are Still on Every Shooter You Play</a></td><td><a href="https://thealzdiary.com/2026/10/19/the-folder-in-the-drawer-what-power-of-attorney-actually-means/">The Folder in the Drawer: What Power of Attorney Actually Means</a></td><td><a href="https://tierradeoz.com/castillo-chapultepec-historia-arte-bebe/">Castillo de Chapultepec — Historia, Arte y el Reto de Subir con Bebé</a></td><td><a href="https://josejorgehz.substack.com/p/sabe-una-inteligencia-artificial">¿Sabe una inteligencia artificial cuándo no sabe algo?</a></td></tr>
